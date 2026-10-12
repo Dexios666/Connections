@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Little Connections ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <header>
+      <div class="heart">♡</div>
+      <h1>Our Little Connections</h1>
+      <p>A little puzzle about our favorite things.</p>
+      <p>Find the four groups of four!</p>
+    </header>
+
+    <h3>Select 4 words that belong together.</h3>
+
+    <div id="solvedGroups"></div>
+
+    <div id="board" class="board"></div>
+
+    <div class="controls">
+      <button id="shuffleBtn">Shuffle</button>
+      <button id="deselectBtn">Deselect all</button>
+      <button id="submitBtn" class="submit" disabled>
+        Submit
+      </button>
+    </div>
+
+    <p id="status" aria-live="polite">Make your first guess! ♡</p>
+
+    <p class="mistakes">
+      Mistakes remaining:
+      <span id="mistakes">● ● ● ●</span>
+    </p>
+
+    <section id="winPanel" class="hidden">
+      <h2>Perfect game! ♡</h2>
+      <p>Four little connections, one very special us.</p>
+      <button id="restartBtn">Play again</button>
+    </section>
+
+    <footer>Made with love, just for us ♡</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
